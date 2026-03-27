@@ -1,0 +1,35 @@
+Create a new file named base.html inside the templates directory in the core directory.
+
+
+
+<!doctype html>
+
+<html>
+
+    <head>
+
+
+
+      {% if title %}
+
+      <title>{{ title }} </title>
+
+      {% else %}
+
+      <title>Todo List</title>
+
+      {% endif %}
+
+    </head>
+
+    <body>
+
+
+
+        {% block content %} {% endblock content%}
+
+
+
+    </body>
+
+</html>
